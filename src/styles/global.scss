@@ -1,7 +1,15 @@
 @import 'colors';
 
 *{
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -9,3 +17,20 @@ body {
     color: $black;
     margin: 0;
 }
+
+.main {
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__container{
+        width: 100%;
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+}
+
