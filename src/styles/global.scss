@@ -1,6 +1,6 @@
 @import 'colors';
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 .main {
-    &__wrapper{
+    &__wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -27,10 +28,9 @@ body {
         justify-content: center;
     }
 
-    &__container{
+    &__container {
         width: 100%;
         max-width: 120rem;
         margin: 0 auto;
     }
 }
-
