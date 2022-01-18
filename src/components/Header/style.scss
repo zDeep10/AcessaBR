@@ -9,20 +9,11 @@
         align-items: flex-start;
     }   
 
-    &__logo{
-
-        &--ebac img{
-            width: 150px;
-            height: auto;
-        }
-    }
-
     &__city{
         font-size: 2rem;
     }
 
     &__city--city {
-        font-weight: bold;
         font-size: 1.5rem;
         color: $lightGray;  
     }
@@ -32,6 +23,16 @@
         color: $green;
         font-weight: bold;
     }
+
+    &__logo{
+
+        &--ebac img{
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    
 }
 
 
