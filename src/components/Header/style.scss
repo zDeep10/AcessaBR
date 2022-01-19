@@ -1,40 +1,33 @@
-@import '../../styles/colors';
+@import "../../styles/colors";
 
-.header{
-    &__container{
-        width: 100%;
-        margin: 4rem 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }   
+.header {
+  &__container {
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-    &__city{
-        font-size: 2rem;
+  &__city {
+    font-size: 2rem;
+  }
+
+  &__city--city {
+    font-size: 1.5rem;
+    color: $lightGray;
+  }
+
+  &__city--br {
+    font-size: 1.9rem;
+    color: $green;
+    font-weight: bold;
+  }
+
+  &__logo {
+    &--ebac img {
+      width: 150px;
+      height: auto;
     }
-
-    &__city--city {
-        font-size: 1.5rem;
-        color: $lightGray;  
-    }
-
-    &__city--br{
-        font-size: 1.9rem;
-        color: $green;
-        font-weight: bold;
-    }
-
-    &__logo{
-
-        &--ebac img{
-            width: 150px;
-            height: auto;
-        }
-    }
-
-    
+  }
 }
-
-
-    
-
