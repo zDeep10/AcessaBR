@@ -16,12 +16,14 @@ const Places = [
   "Aquario",
 ];
 
+
 const Home = () => {
   const [selectedPill, setSelectedPill] = useState("");
 
   return (
     <main className="home__container">
       <div className="home__col">
+        
         <h1 className="home__title">Belo Horizonte para todos</h1>
 
         <p className="home__text">
@@ -48,11 +50,9 @@ const Home = () => {
 
       <div className="home__col">
         <div className="home__img">
-          <img
-            className="home__img--size"
-            src={Wheelchair}
-            alt="Foto principal cadeirante"
-          />
+          
+          <img className="home__img--size" src={Wheelchair} alt="Foto principal cadeirante"/>
+          
         </div>
       </div>
     </main>

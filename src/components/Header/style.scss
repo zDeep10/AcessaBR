@@ -1,4 +1,3 @@
-@import "../../styles/colors";
 
 .header {
   &__container {
@@ -15,12 +14,12 @@
 
   &__city--city {
     font-size: 1.5rem;
-    color: $lightGray;
+    color: var(--lightGray);
   }
 
   &__city--br {
     font-size: 1.9rem;
-    color: $green;
+    color: var(--green);
     font-weight: bold;
   }
 

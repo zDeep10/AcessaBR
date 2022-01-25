@@ -2,12 +2,10 @@
   &__container {
     display: flex;
     width: 100%;
-    background-color: aquamarine;
   }
 
   &__col {
     width: 50%;
-    background-color: bisque;
   }
 
   &__title {
@@ -27,10 +25,20 @@
 
   &__img {
     text-align: center;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
 
-    &--size {
-      width: 400px;
-      height: auto;
-    }
+    // &--size {
+    //   width: 400px;
+    //   height: auto;
+    // }
+  }
+
+  &__pills{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
   }
 }

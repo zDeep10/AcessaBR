@@ -1,10 +1,11 @@
 import React from 'react';
-import './style.scss';
 import PropTypes from 'prop-types'
+import "./style.scss";
 
-const Pills = ( {local, onClick, selected}) => { 
+
+const Pills = ({local, onClick, selected}) => { 
     return(
-        <div onClick={onClick} className={`{pills__container ${selected ? 'pill__container--active' : ''}`}>
+        <div onClick={onClick} className={`pills__container ${selected ? 'pills__container--active' : ''}`}>
             {local}
         </div>
     )
