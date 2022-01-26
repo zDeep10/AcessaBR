@@ -1,0 +1,50 @@
+.card {
+  &__container {
+    width: 100%;
+    max-width: 222px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 222px;
+    border: 1px solid var(--lightGreen);
+    border-radius: 1rem;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    padding: 1.6rem;
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 2.8rem;
+      color: var(--black);
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__facilities {
+    display: grid;
+    grid-template-columns: repeat(5, 3rem);
+    grid-gap: 0.5rem;
+    margin: 1rem auto;
+    list-style-type: none;
+
+    &__item {
+      background-color: var(--blue);
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+
+      &--unchecked {
+        background-color: var(--lightGray);
+      }
+    }
+  }
+}

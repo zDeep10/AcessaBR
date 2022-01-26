@@ -1,11 +1,12 @@
 .curadora {
   &__container {
     align-items: center;
-    background-color: var(--green);
+    background-color: rgba(0, 182, 193, .5);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     width: 100%;
   }
 
