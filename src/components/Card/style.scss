@@ -37,14 +37,24 @@
     list-style-type: none;
 
     &__item {
-      background-color: var(--blue);
+      background-color: var(--green);
       border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 30px;
       height: 30px;
 
       &--unchecked {
         background-color: var(--lightGray);
       }
+
+      &--set{
+        padding: 13%;
+        width: 100%;
+        
+      }
+
     }
   }
 }

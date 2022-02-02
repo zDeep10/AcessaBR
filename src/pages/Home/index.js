@@ -39,11 +39,8 @@ const Home = () => {
 
         <div className="home__pills">
           {Places.map((item) => (
-            <Pills
-              local={item}
-              selected={selectedPill === item}
-              onClick={() => setSelectedPill(item)}
-            />
+            <Pills local={item} selected={selectedPill === item} onClick={() => setSelectedPill(item)} />
+
           ))}
         </div>
       </div>
