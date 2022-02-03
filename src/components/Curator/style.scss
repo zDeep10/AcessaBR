@@ -5,6 +5,7 @@
     border-radius: 1rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 6rem;
     margin-bottom: 6rem;
     width: 100%;
@@ -24,6 +25,13 @@
   &__info {
     margin-left: 2rem;
     width: 56%;
+
+    @media (max-width:480px){
+      margin: 0 0 0 0;
+      width: 85%;
+      padding-bottom: 2rem;
+    }
+
   }
 
   &__title {

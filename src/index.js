@@ -7,10 +7,16 @@ import Curator from "./components/Curator"
 import Footer from "./components/Footer"
 import "./styles/global.scss";
 
+
+const config={
+  "city":'Belo Horizonte',
+  "state":'MG'
+}
+
 ReactDOM.render(
   <div className="main__wrapper">
     <div className="main__container">
-      <Header />
+      <Header config={config} />
       <Home />
       <Places/>
       <Curator/>

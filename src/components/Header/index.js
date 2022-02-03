@@ -2,14 +2,14 @@ import React from "react";
 import ebac from "../../imgs/logo.svg";
 import "./style.scss";
 
-const Header = () => {
+const Header = ({config}) => {
   return (
     <header className="header__container">
-      <div className="header__logo--state">
+      <div className="header__logo header__logo--state">
         <span className="header__city">
           Acessa
           <span className="header__city--br">BR</span>
-          <span className="header__city--city"> | Belo Horizonte - MG</span>
+          <span className="header__city--city"> | {config.city} - {config.state}</span>
         </span>
       </div>
 
