@@ -1,15 +1,21 @@
-import React from "react";
+import React, {useContext} from 'react';
 import ebac from "../../imgs/logo.svg";
 import "./style.scss";
+import { LocationContext } from '../../contexts/LocationContext';
 
-const Header = ({config}) => {
+const Header = props => {
+  
+  const {city, state} = useContext(LocationContext)
+  
+  
+  
   return (
     <header className="header__container">
       <div className="header__logo header__logo--state">
         <span className="header__city">
           Acessa
           <span className="header__city--br">BR</span>
-          <span className="header__city--city"> | {config.city} - {config.state}</span>
+          <span className="header__city--city"> | {city} - {state}</span>
         </span>
       </div>
 

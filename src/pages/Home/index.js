@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { useContext } from "react";
 import "./style.scss";
 import Wheelchair from "../../imgs/main_img.png";
 import Pills from "../../components/Pills";
 import { useState } from "react";
-
+import { LocationContext } from "../../contexts/LocationContext";
+import { useParams } from "react-router-dom";
+// import {useEffect} from "react";
 const Places = [
   "Praça",
   "Parque",
@@ -17,13 +20,20 @@ const Places = [
 ];
 
 const Home = () => {
+  const {city, state} = useParams("");
   const [selectedPill, setSelectedPill] = useState("");
 
+  const {setCity, setState} = useContext(LocationContext)
+
+  useEffect(() =>{
+    setCity(city)
+    setState(state)
+  }, [city, setCity, setState, state])
   return (
     <main className="home__container">
       <div className="home__col">
         
-        <h1 className="home__title">Belo horizonte para todos</h1>
+        <h1 className="home__title">{city} para todos</h1>
 
         <div className="home__img hide-desktop">
           
