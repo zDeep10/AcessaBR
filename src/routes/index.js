@@ -8,7 +8,7 @@ import { LocationContext } from "../contexts/LocationContext";
 import Header from "../components/Header";
 import { useState } from "react";
 
-const Routes = props => {
+const Routes = () => {
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
   return (

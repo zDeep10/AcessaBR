@@ -1,86 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SwiperCore, { Pagination } from "swiper";
-// import Swipertest from 'swiper/bundle';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../Card";
-import 'swiper/css/bundle'
+import "swiper/css/bundle";
+import api from "../../Config/api";
 
-SwiperCore.use(Pagination);
-
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
-
-// slidesPerView={4} breakpoints={{767:{slidesPerView:2},1024: {slidesPerView:4}}}
+SwiperCore.use([Pagination]);
 
 const Slider = () => {
+  const [places, setPlaces] = useState([]);
+
+  useEffect(() => {
+    const fetchPlaces = async () => {
+      const result = await api.get("/places");
+
+      if (result.status === 200) {
+        setPlaces(result.data);
+      }
+    };
+
+    fetchPlaces();
+  }, []);
+
   return (
-    <Swiper  
-      spaceBetween={50}
+    <Swiper
       slidesPerView={1}
+      spaceBetween={50}
       breakpoints={{
-        767:{
-          slidesPerView:3
+        300: {
+          slidesPerView: 1,
         },
-        1024:{
-          slidesPerView:4
-        }
+        767: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
       }}
-    
     >
+      {places.map((item) => (
         <SwiperSlide>
-          <Card />
+          <Card item={item} />
         </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

@@ -13,7 +13,7 @@ import portaL from "../../imgs/icons-acess/icon-portaLarga.png";
 import rampa from "../../imgs/icons-acess/icon-rampa.png";
 import libras from "../../imgs/icons-acess/icon-sinais.png";
 
-const Card = () => {
+const Card = ({item}) => {
   return (
     <div className="card__container">
       <div className="card__image">
@@ -21,11 +21,14 @@ const Card = () => {
       </div>
 
       <div className="card__content">
-        <h3>Nome do Local</h3>
+        <h3>{item.name}</h3>
 
         <ul className="card__facilities">
-          
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[0].item} ${
+              !item.facilities[0].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={braile}
@@ -34,7 +37,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item card__facilities__item--unchecked">
+          <li
+            className={`card__facilities__item ${item.facilities[1].item} ${
+              !item.facilities[1].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={audioD}
@@ -43,7 +50,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[2].item} ${
+              !item.facilities[2].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={banheiroA}
@@ -52,7 +63,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[3].item} ${
+              !item.facilities[3].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={elevator}
@@ -61,7 +76,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[4].item} ${
+              !item.facilities[4].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={parking}
@@ -70,7 +89,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[5].item} ${
+              !item.facilities[5].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={guideD}
@@ -79,7 +102,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[6].item} ${
+              !item.facilities[6].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={pisoT}
@@ -88,7 +115,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[7].item} ${
+              !item.facilities[7].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={portaL}
@@ -97,7 +128,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[8].item} ${
+              !item.facilities[8].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={rampa}
@@ -106,7 +141,11 @@ const Card = () => {
             />
           </li>
 
-          <li className="card__facilities__item">
+          <li
+            className={`card__facilities__item ${item.facilities[9].item} ${
+              !item.facilities[9].status ? "card__facilities__item--unchecked" : ""
+            }`}
+          >
             <img
               className="card__facilities__item--set"
               src={libras}
@@ -114,10 +153,9 @@ const Card = () => {
               title="Atendimento em Libras"
             />
           </li>
-
         </ul>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>{item.description}</p>
 
         <Button>Como Chegar</Button>
       </div>
