@@ -1,0 +1,130 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Museu da linga Portuguesa",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "location": {
+        "lat": "01234",
+        "long": "4321"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": false },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mercado Municipal",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "location": {
+        "lat": "01234",
+        "long": "4321"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Auditorio Ibirapuera",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "location": {
+        "lat": "01234",
+        "long": "4321"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Museu de artes de São Paulo",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "location": {
+        "lat": "01234",
+        "long": "4321"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Parque Independencia",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "location": {
+        "lat": "01234",
+        "long": "4321"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Parque Independencia",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "location": {
+        "lat": "01234",
+        "long": "4321"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    }
+  ]
+}
