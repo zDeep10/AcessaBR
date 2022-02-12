@@ -1,23 +1,28 @@
 import "./style.scss";
 import Wheelchair from "../../imgs/main_img.png";
 import Pills from "../../components/Pills";
-import { useState } from "react";
+import { useContext } from "react";
+import {FilterContext} from '../../contexts/FilterContext';
 
 const Places = [
   "Praça",
   "Parque",
-  "Igreja",
-  "Hotel",
-  "Restaurante",
-  "Zoologico",
-  "Farmacia",
-  "Loja",
-  "Aquario",
+  "Estadio",
+  "Lagoa"
 ];
 
 const Home = () => {
   
-  const [selectedPill, setSelectedPill] = useState("");
+  const {filteredPlace, setfilteredPlace} = useContext(FilterContext)
+
+  const handleFilterPlace = (item) =>{
+    if(item === filteredPlace){
+      setfilteredPlace('')
+      return
+    }
+
+    setfilteredPlace(item)
+  }
 
   return (
     <main className="home__container">
@@ -44,7 +49,7 @@ const Home = () => {
 
         <div className="home__pills">
           {Places.map((item) => (
-            <Pills local={item} selected={selectedPill === item} onClick={() => setSelectedPill(item)} />
+            <Pills local={item} selected={filteredPlace === item} onClick={() => handleFilterPlace(item)} />
 
           ))}
         </div>

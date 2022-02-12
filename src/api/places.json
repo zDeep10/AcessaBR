@@ -1,8 +1,11 @@
+
 {
   "places": [
     {
       "id": 1,
-      "name": "Museu da linga Portuguesa",
+      "name": "Mirante",
+      "image": "/places/mirante.jpg",
+      "category":  "Praça",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
       "location": {
         "lat": "01234",
@@ -23,7 +26,9 @@
     },
     {
       "id": 2,
-      "name": "Mercado Municipal",
+      "name": "Parque Municipal",
+      "image": "/places/parque_municipal.jpg",
+      "category":  "Parque",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
       "location": {
         "lat": "01234",
@@ -44,7 +49,9 @@
     },
     {
       "id": 3,
-      "name": "Auditorio Ibirapuera",
+      "name": "Estadio Mineirão",
+      "image": "/places/estadio-mineirao.jpg",
+      "category":  "Estadio",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
       "location": {
         "lat": "01234",
@@ -65,7 +72,9 @@
     },
     {
       "id": 4,
-      "name": "Museu de artes de São Paulo",
+      "name": "Praça da Liberdade",
+      "image": "/places/praca-liberdade.jpg",
+      "category":  "Praça",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
       "location": {
         "lat": "01234",
@@ -86,28 +95,9 @@
     },
     {
       "id": 5,
-      "name": "Parque Independencia",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-      "location": {
-        "lat": "01234",
-        "long": "4321"
-      },
-      "facilities": [
-        { "item": 1, "status": true },
-        { "item": 2, "status": true },
-        { "item": 3, "status": true },
-        { "item": 4, "status": true },
-        { "item": 5, "status": true },
-        { "item": 6, "status": true },
-        { "item": 7, "status": true },
-        { "item": 8, "status": true },
-        { "item": 9, "status": true },
-        { "item": 10, "status": true }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Parque Independencia",
+      "name": "Lagoa da Pampulha",
+      "image": "/places/lagoa-pampulha.jpg",
+      "category":  "Lagoa",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
       "location": {
         "lat": "01234",

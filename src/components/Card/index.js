@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import Button from "../Button";
 
+// Imagem icones
 import audioD from "../../imgs/icons-acess/icon-audioDescrição.png";
 import banheiroA from "../../imgs/icons-acess/icon-banheiroAcessivel.png";
 import braile from "../../imgs/icons-acess/icon-braille.png";
@@ -13,11 +14,14 @@ import portaL from "../../imgs/icons-acess/icon-portaLarga.png";
 import rampa from "../../imgs/icons-acess/icon-rampa.png";
 import libras from "../../imgs/icons-acess/icon-sinais.png";
 
+
 const Card = ({item}) => {
+  const imgPath = require('../../imgs' + item.image)
+
   return (
     <div className="card__container">
       <div className="card__image">
-        <img src="#" alt="Imagem dos locais" />
+        <img src={imgPath} alt={item.name} title={item.name} />
       </div>
 
       <div className="card__content">

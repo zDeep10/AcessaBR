@@ -1,37 +1,45 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../Card";
 import "swiper/css/bundle";
 import api from "../../Config/api";
 
+import {FilterContext} from '../../contexts/FilterContext';
+
 SwiperCore.use([Pagination]);
 
 const Slider = () => {
+  const {filteredPlace} = useContext(FilterContext)
   const [places, setPlaces] = useState([]);
+
+  console.log(filteredPlace)
 
   useEffect(() => {
     const fetchPlaces = async () => {
-      const result = await api.get("/places");
+      const caterogyPlaces = await api.get(`/places?category=${filteredPlace}`);
+      
+      const allplaces = await api.get(`/places`);
 
-      if (result.status === 200) {
-        setPlaces(result.data);
+      if (filteredPlace === ''){
+        setPlaces(allplaces.data)
+      }else {
+        setPlaces(caterogyPlaces.data)
       }
     };
 
     fetchPlaces();
-  }, []);
+  }, [filteredPlace]);
 
   return (
     <Swiper
-      slidesPerView={1}
       spaceBetween={50}
       breakpoints={{
-        300: {
-          slidesPerView: 1,
+        560: {
+          slidesPerView: 2,
         },
         767: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
           slidesPerView: 4,
@@ -39,8 +47,8 @@ const Slider = () => {
       }}
     >
       {places.map((item) => (
-        <SwiperSlide>
-          <Card item={item} />
+        <SwiperSlide key={item.key}>
+          <Card key={item.key} item={item} />
         </SwiperSlide>
       ))}
     </Swiper>
