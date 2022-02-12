@@ -5,26 +5,26 @@ import Card from "../Card";
 import "swiper/css/bundle";
 import api from "../../Config/api";
 
-import {FilterContext} from '../../contexts/FilterContext';
+import { FilterContext } from "../../contexts/FilterContext";
 
 SwiperCore.use([Pagination]);
 
 const Slider = () => {
-  const {filteredPlace} = useContext(FilterContext)
+  const { filteredPlace } = useContext(FilterContext);
   const [places, setPlaces] = useState([]);
 
-  console.log(filteredPlace)
+  console.log(filteredPlace);
 
   useEffect(() => {
     const fetchPlaces = async () => {
       const caterogyPlaces = await api.get(`/places?category=${filteredPlace}`);
-      
+
       const allplaces = await api.get(`/places`);
 
-      if (filteredPlace === ''){
-        setPlaces(allplaces.data)
-      }else {
-        setPlaces(caterogyPlaces.data)
+      if (filteredPlace === "") {
+        setPlaces(allplaces.data);
+      } else {
+        setPlaces(caterogyPlaces.data);
       }
     };
 

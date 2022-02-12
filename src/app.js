@@ -11,7 +11,7 @@ import { FilterContext } from "./contexts/FilterContext";
 // import { LocationContext } from "./contexts/LocationContext";
 
 export default function App() {
-  const [filteredPlace, setfilteredPlace] = useState('')
+  const [filteredPlace, setfilteredPlace] = useState("");
 
   return (
     <FilterContext.Provider value={{ filteredPlace, setfilteredPlace }}>

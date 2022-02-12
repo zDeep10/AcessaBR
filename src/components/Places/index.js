@@ -10,7 +10,7 @@ const Places = () =>{
     return(
         <section className="places__container">
             <div className="places__header">
-                <h2 className="places__title"> {filteredPlace ? filteredPlace : 'Locais'} <span>Acessíveis</span></h2>
+                <h2 className="places__title"> {filteredPlace ? filteredPlace +'s' : 'Locais'} <span>Acessíveis</span></h2>
                 <div className="places__select">
                     <h5>Ordenar por:</h5>
                     <select>

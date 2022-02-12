@@ -14,9 +14,8 @@ import portaL from "../../imgs/icons-acess/icon-portaLarga.png";
 import rampa from "../../imgs/icons-acess/icon-rampa.png";
 import libras from "../../imgs/icons-acess/icon-sinais.png";
 
-
-const Card = ({item}) => {
-  const imgPath = require('../../imgs' + item.image)
+const Card = ({ item }) => {
+  const imgPath = require("../../imgs" + item.image);
 
   return (
     <div className="card__container">
@@ -30,7 +29,9 @@ const Card = ({item}) => {
         <ul className="card__facilities">
           <li
             className={`card__facilities__item ${item.facilities[0].item} ${
-              !item.facilities[0].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[0].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -43,7 +44,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[1].item} ${
-              !item.facilities[1].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[1].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -56,7 +59,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[2].item} ${
-              !item.facilities[2].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[2].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -69,7 +74,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[3].item} ${
-              !item.facilities[3].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[3].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -82,7 +89,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[4].item} ${
-              !item.facilities[4].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[4].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -95,7 +104,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[5].item} ${
-              !item.facilities[5].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[5].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -108,7 +119,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[6].item} ${
-              !item.facilities[6].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[6].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -121,7 +134,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[7].item} ${
-              !item.facilities[7].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[7].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -134,7 +149,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[8].item} ${
-              !item.facilities[8].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[8].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
@@ -147,7 +164,9 @@ const Card = ({item}) => {
 
           <li
             className={`card__facilities__item ${item.facilities[9].item} ${
-              !item.facilities[9].status ? "card__facilities__item--unchecked" : ""
+              !item.facilities[9].status
+                ? "card__facilities__item--unchecked"
+                : ""
             }`}
           >
             <img
