@@ -1,12 +1,12 @@
-
 {
   "places": [
     {
       "id": 1,
       "name": "Mirante",
       "image": "/places/mirante.jpg",
-      "category":  "Praça",
+      "category": "Praça",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "link": "https://www.essemundoenosso.com.br/mirante-em-belo-horizonte/",
       "location": {
         "lat": "01234",
         "long": "4321"
@@ -17,33 +17,34 @@
         { "item": 3, "status": true },
         { "item": 4, "status": true },
         { "item": 5, "status": true },
-        { "item": 6, "status": true },
+        { "item": 6, "status": false },
         { "item": 7, "status": true },
         { "item": 8, "status": true },
         { "item": 9, "status": true },
-        { "item": 10, "status": true }
+        { "item": 10, "status": false }
       ]
     },
     {
       "id": 2,
       "name": "Parque Municipal",
       "image": "/places/parque_municipal.jpg",
-      "category":  "Parque",
+      "category": "Parque",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "link": "https://prefeitura.pbh.gov.br/fundacao-de-parques-e-zoobotanica/parques",
       "location": {
         "lat": "01234",
         "long": "4321"
       },
       "facilities": [
-        { "item": 1, "status": true },
+        { "item": 1, "status": false },
         { "item": 2, "status": true },
         { "item": 3, "status": true },
-        { "item": 4, "status": true },
+        { "item": 4, "status": false },
         { "item": 5, "status": true },
-        { "item": 6, "status": true },
+        { "item": 6, "status": false },
         { "item": 7, "status": true },
         { "item": 8, "status": true },
-        { "item": 9, "status": true },
+        { "item": 9, "status": false },
         { "item": 10, "status": true }
       ]
     },
@@ -51,8 +52,9 @@
       "id": 3,
       "name": "Estadio Mineirão",
       "image": "/places/estadio-mineirao.jpg",
-      "category":  "Estadio",
+      "category": "Estadio",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "link": "http://estadiomineirao.com.br/",
       "location": {
         "lat": "01234",
         "long": "4321"
@@ -61,10 +63,10 @@
         { "item": 1, "status": true },
         { "item": 2, "status": true },
         { "item": 3, "status": true },
-        { "item": 4, "status": true },
-        { "item": 5, "status": true },
+        { "item": 4, "status": false },
+        { "item": 5, "status": false },
         { "item": 6, "status": true },
-        { "item": 7, "status": true },
+        { "item": 7, "status": false },
         { "item": 8, "status": true },
         { "item": 9, "status": true },
         { "item": 10, "status": true }
@@ -74,31 +76,33 @@
       "id": 4,
       "name": "Praça da Liberdade",
       "image": "/places/praca-liberdade.jpg",
-      "category":  "Praça",
+      "category": "Praça",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "link": "https://www.tripadvisor.com.br/Attraction_Review-g303374-d1534424-Reviews-Praca_da_Liberdade-Belo_Horizonte_State_of_Minas_Gerais.html",
       "location": {
         "lat": "01234",
         "long": "4321"
       },
       "facilities": [
         { "item": 1, "status": true },
-        { "item": 2, "status": true },
+        { "item": 2, "status": false },
         { "item": 3, "status": true },
-        { "item": 4, "status": true },
+        { "item": 4, "status": false },
         { "item": 5, "status": true },
         { "item": 6, "status": true },
-        { "item": 7, "status": true },
+        { "item": 7, "status": false },
         { "item": 8, "status": true },
         { "item": 9, "status": true },
-        { "item": 10, "status": true }
+        { "item": 10, "status": false }
       ]
     },
     {
       "id": 5,
       "name": "Lagoa da Pampulha",
       "image": "/places/lagoa-pampulha.jpg",
-      "category":  "Lagoa",
+      "category": "Lagoa",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "link": "https://www.lagoadapampulha.com.br/conheca-a-lagoa-da-pampulha-usando-o-audioguia-aplicativo-gratuito-com-audioguia-de-seis-roteiros-de-bh/",
       "location": {
         "lat": "01234",
         "long": "4321"
@@ -106,13 +110,13 @@
       "facilities": [
         { "item": 1, "status": true },
         { "item": 2, "status": true },
-        { "item": 3, "status": true },
+        { "item": 3, "status": false },
         { "item": 4, "status": true },
-        { "item": 5, "status": true },
+        { "item": 5, "status": false },
         { "item": 6, "status": true },
         { "item": 7, "status": true },
         { "item": 8, "status": true },
-        { "item": 9, "status": true },
+        { "item": 9, "status": false },
         { "item": 10, "status": true }
       ]
     }

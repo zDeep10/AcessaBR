@@ -180,7 +180,11 @@ const Card = ({ item }) => {
 
         <p>{item.description}</p>
 
-        <Button>Como Chegar</Button>
+        <Button className="card__button">
+          <a className="card__button__link" target="_blank" href={item.link} rel="noreferrer">
+            Como Chegar
+          </a>
+        </Button>
       </div>
     </div>
   );

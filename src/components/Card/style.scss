@@ -61,4 +61,12 @@
 
     }
   }
+
+  &__button{
+    &__link{
+      text-decoration: none;
+      color: var(--white);
+      font-weight: bold;
+    }
+  }
 }
