@@ -12,7 +12,6 @@ const Home = () => {
   const handleFilterPlace = (item) => {
     if (item === filteredPlace) {
       setfilteredPlace("");
-      return;
     }
 
     setfilteredPlace(item);

@@ -11,24 +11,28 @@ SwiperCore.use([Pagination]);
 
 const Slider = () => {
   const { filteredPlace } = useContext(FilterContext);
+  const [filterPlaces, setFilterPlaces] = useState([])
   const [places, setPlaces] = useState([]);
-
-  console.log(filteredPlace);
 
   useEffect(() => {
     const fetchPlaces = async () => {
-      const caterogyPlaces = await api.get(`/places?category=${filteredPlace}`);
+      const result = await api.get('/');
 
-      const allplaces = await api.get(`/places`);
-
-      if (filteredPlace === "") {
-        setPlaces(allplaces.data);
-      } else {
-        setPlaces(caterogyPlaces.data);
+      if (result.status === 200) {
+        setPlaces(result.data.places);
+        setFilterPlaces(result.data.places);
       }
     };
 
     fetchPlaces();
+  }, []);
+
+  useEffect(() => {
+    
+    const filterResult = places.filter(place => place.category === filteredPlace )
+
+    setFilterPlaces(filterResult)
+
   }, [filteredPlace]);
 
   return (
@@ -46,7 +50,7 @@ const Slider = () => {
         },
       }}
     >
-      {places.map((item) => (
+      {filterPlaces.map((item) => (
         <SwiperSlide key={item.key}>
           <Card key={item.key} item={item} />
         </SwiperSlide>

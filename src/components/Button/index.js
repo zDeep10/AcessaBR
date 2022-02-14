@@ -15,8 +15,8 @@ Button.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  onClick: PropTypes.func.isRequired,
-  width: PropTypes.number.isRequired,
+  onClick: PropTypes.func,
+  width: PropTypes.number,
 };
 
 export default Button;
