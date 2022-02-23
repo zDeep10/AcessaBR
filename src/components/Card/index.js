@@ -19,13 +19,13 @@ const Card = ({ item }) => {
 
   return (
     <div className="card__container">
+      <h3>{item.name}</h3>
+
       <div className="card__image">
         <img src={imgPath} alt={item.name} title={item.name} />
       </div>
 
       <div className="card__content">
-        <h3>{item.name}</h3>
-
         <ul className="card__facilities">
           <li
             className={`card__facilities__item ${item.facilities[0].item} ${
@@ -181,7 +181,12 @@ const Card = ({ item }) => {
         <p>{item.description}</p>
 
         <Button className="card__button">
-          <a className="card__button__link" target="_blank" href={item.link} rel="noreferrer">
+          <a
+            className="card__button__link"
+            target="_blank"
+            href={item.link}
+            rel="noreferrer"
+          >
             Como Chegar
           </a>
         </Button>

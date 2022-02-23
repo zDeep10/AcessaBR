@@ -19,10 +19,8 @@ const Curator = () => {
         </h1>
 
         <p className="curadora__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-          deleniti voluptate eaque veritatis est fugiat quae adipisci nihil modi
-          pariatur, qui optio, quam itaque totam minima sapiente assumenda
-          magnam.
+          Me chamo Gabriel, tenho 22 anos e sou apaixonado pela internet. Estudante e Técnico na área de Desenvolvimento WEB. Atualmente focado
+          em React & NodeJS. Em constante desenvolvimento de projetos.
         </p>
       </div>
     </section>
